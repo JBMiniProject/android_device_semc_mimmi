@@ -1,0 +1,76 @@
+#
+# system.prop for X10 Mini
+#
+# RIL
+rild.libpath=/system/lib/libsemc_ril.so
+rild.libargs=-d/dev/smd0
+ro.telephony.ril.v3=icccardstatus,signalstrength,datacall
+ro.telephony.default_network=0
+ro.telephony.call_ring.multiple=false
+ro.ril.disable.power.collapse=1
+ro.ril.enable.a52=1
+ro.ril.enable.a53=1
+ro.ril.hsxpa=2
+ro.ril.hsupa.category=5
+ro.ril.gprsclass=10
+
+# Wlan
+wifi.interface=tiwlan0
+wifi.supplicant_scan_interval=45
+wifi.hotspot.ti=1
+wifi.ap.interface=tiap0
+
+
+# Media
+ro.media.dec.jpeg.memcap=10000000
+ro.media.enc.file.format=3gp,mp4
+ro.media.enc.vid.codec=m4v,h263
+ro.media.enc.vid.h263.width=176,640
+ro.media.enc.vid.h263.height=144,480
+ro.media.enc.vid.h263.bps=64000,1600000
+ro.media.enc.vid.h263.fps=1,30
+ro.media.enc.vid.m4v.width=176,640
+ro.media.enc.vid.m4v.height=144,480
+ro.media.enc.vid.m4v.bps=64000,1600000
+ro.media.enc.vid.m4v.fps=1,30
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+
+# Performance
+debug.composition.type=mdp
+debug.performance.tuning=1
+debug.sf.hw=1
+debug.gr.numframebuffers=2
+ro.compcache.default=18
+video.accelerate.hw=1
+persist.service.zram=1
+persist.sys.use_16bpp_alpha=0
+persist.sys.use_dithering=1
+
+# LCD
+ro.sf.lcd_density=120
+ro.opengles.version=131072
+settings.display.autobacklight=1
+hwui.render_dirty_regions=false
+hwui.disable_vsync=true
+hwui.print_config=choice
+
+# USB
+persist.sys.usb.config=mass_storage,adb
+
+# Dalvik tweaks
+dalvik.vm.dexopt-flags=m=y
+dalvik.vm.checkjni=false
+dalvik.vm.heapsize=48m
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.lockprof.threshold=500
+
+# GPS
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
