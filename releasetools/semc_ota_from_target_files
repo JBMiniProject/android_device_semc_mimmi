@@ -412,10 +412,6 @@ def WriteFullOTAPackage(input_zip, output_zip):
     common.CheckSize(boot_img.data, "boot.img", OPTIONS.info_dict)
     common.ZipWriteStr(output_zip, "boot.img", boot_img.data)
 
-  kernel_sin = open(OPTIONS.device_out + '/kernel.sin','r')
-  common.ZipWriteStr(output_zip, "kernel.sin", kernel_sin.read())
-  kernel_sin.close()
-
   script.ShowProgress(0.2, 0)
 
   if OPTIONS.backuptool:
