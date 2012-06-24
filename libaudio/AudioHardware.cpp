@@ -1177,9 +1177,11 @@ status_t AudioHardware::setVoiceVolume(float v)
         v = 1.0;
     }
 
-    int vol = lrint(v * 1.0);
+    int vol = lrint(v * 5.0);
+    vol = vol + 1;
+
     LOGD("setVoiceVolume(%f)\n", v);
-    LOGI("Setting in-call volume to %d (available range is 0 to 7)\n", vol);
+    LOGI("Setting in-call volume to %d (available range is 1 to 6)\n", vol);
 
     if ((mCurSndDevice != -1) && ((mCurSndDevice == SND_DEVICE_TTY) || (mCurSndDevice == SND_DEVICE_VCO)))
     {
