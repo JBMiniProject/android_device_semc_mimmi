@@ -1,5 +1,5 @@
 #
-# system.prop for X10 Mini
+# system.prop for X10 Mini Pro
 #
 # RIL
 rild.libpath=/system/lib/libsemc_ril.so

@@ -27,6 +27,7 @@
 # Camera
 USE_CAMERA_STUB := true
 BOARD_USES_ECLAIR_LIBCAMERA := true
+BOARD_USE_FROYO_LIBCAMERA := true
 BOARD_CAMERA_LIBRARIES := camera.msm7x27.so libcameraservice libcamera libcamera_client.so liboemcamera.so
 
 # inherit from the proprietary version
