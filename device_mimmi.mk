@@ -46,7 +46,11 @@ PRODUCT_COPY_FILES += \
 # Vold
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/vold.fstab:system/etc/vold.fstab
-	
+
+# Updater script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/update-binary:obj/EXECUTABLES/updater_intermediates/updater
+
 # Sensors + Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/lights.default.so:system/lib/hw/lights.default.so \
