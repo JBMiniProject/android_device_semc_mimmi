@@ -44,19 +44,20 @@ media.stagefright.enable-http=true
 debug.composition.type=mdp
 debug.performance.tuning=1
 debug.sf.hw=1
-debug.gr.numframebuffers=2
+debug.gr.numframebuffers=3
+debug.gr.swapinterval=0
 ro.compcache.default=18
 video.accelerate.hw=1
 persist.service.zram=1
-persist.sys.use_16bpp_alpha=0
+persist.sys.use_16bpp_alpha=1
 persist.sys.use_dithering=1
+com.qc.hardware=true
+windowsmgr.max_events_per_sec=150
 
 # LCD
-ro.sf.lcd_density=120
 ro.opengles.version=131072
 settings.display.autobacklight=1
 hwui.render_dirty_regions=false
-hwui.disable_vsync=true
 hwui.print_config=choice
 
 # USB
@@ -74,3 +75,11 @@ dalvik.vm.lockprof.threshold=500
 # GPS
 ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
+
+# Some stuff
+pm.sleep_mode=2
+debug.enabletr=false
+
+# Camera
+debug.camcorder.disablemeta=1
+persist.pmem.camera=4000000

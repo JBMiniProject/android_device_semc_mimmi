@@ -1,7 +1,10 @@
+# inherit from the common version
+-include device/semc/msm7x27-common/Android.mk
+
 LOCAL_PATH := $(my-dir)
 
+LOCAL_MODULE_TAGS := optional
+
 ifeq ($(TARGET_DEVICE),mimmi)
-    subdir_makefiles := \
-        $(LOCAL_PATH)/libaudio/Android.mk
-    include $(subdir_makefiles)
+    include $(all-subdir-makefiles)
 endif
