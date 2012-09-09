@@ -22,7 +22,7 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := jbmp_mimmi
+PRODUCT_NAME := mimmi
 PRODUCT_DEVICE := mimmi
 PRODUCT_MODEL := U20i
 
@@ -90,7 +90,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Prebuilt Binaries
 PRODUCT_COPY_FILES += \
     device/semc/mimmi/prebuilt/app/Torch.apk:system/app/Torch.apk \
-	device/semc/mimmi/prebuilt/app/KBfix.apk:system/app/KBfix.apk \
+    device/semc/mimmi/prebuilt/app/KBfix.apk:system/app/KBfix.apk \
     device/semc/mimmi/prebuilt/bin/chargemon:system/bin/chargemon \
     device/semc/mimmi/prebuilt/bin/inputattach:system/bin/inputattach \
     device/semc/mimmi/prebuilt/bin/nvimport:system/bin/nvimport \
@@ -100,7 +100,7 @@ PRODUCT_COPY_FILES += \
     device/semc/mimmi/prebuilt/bin/slidercounter:system/bin/slidercounter \
     device/semc/mimmi/prebuilt/bin/updatemiscta:system/bin/updatemiscta \
     device/semc/mimmi/prebuilt/bin/rild:system/bin/rild \
-	device/semc/mimmi/prebuilt/bin/tiap_cu:system/bin/tiap_cu \
+    device/semc/mimmi/prebuilt/bin/tiap_cu:system/bin/tiap_cu \
     device/semc/mimmi/prebuilt/bin/tiap_loader:system/bin/tiap_loader \
     device/semc/mimmi/prebuilt/etc/firmware/fmc_init_1273.1.bts:system/etc/firmware/fmc_init_1273.1.bts \
     device/semc/mimmi/prebuilt/etc/firmware/fmc_init_1273.2.bts:system/etc/firmware/fmc_init_1273.2.bts \
@@ -109,7 +109,7 @@ PRODUCT_COPY_FILES += \
     device/semc/mimmi/prebuilt/etc/firmware/fm_tx_init_1273.1.bts:system/etc/firmware/fm_tx_init_1273.1.bts \
     device/semc/mimmi/prebuilt/etc/firmware/fm_tx_init_1273.2.bts:system/etc/firmware/fm_tx_init_1273.2.bts \
     device/semc/mimmi/prebuilt/etc/firmware/TIInit_7.2.31.bts:system/etc/firmware/TIInit_7.2.31.bts \
-	device/semc/mimmi/prebuilt/etc/firmware/cy8_truetouch_jtouch.hex:system/etc/firmware/cy8_truetouch_jtouch.hex \
+    device/semc/mimmi/prebuilt/etc/firmware/cy8_truetouch_jtouch.hex:system/etc/firmware/cy8_truetouch_jtouch.hex \
     device/semc/mimmi/prebuilt/etc/firmware/cy8_truetouch_tpk.hex:system/etc/firmware/cy8_truetouch_tpk.hex \
     device/semc/mimmi/prebuilt/etc/semc/chargemon/anim1.rle:system/etc/semc/chargemon/anim1.rle \
     device/semc/mimmi/prebuilt/etc/semc/chargemon/anim2.rle:system/etc/semc/chargemon/anim2.rle \
@@ -165,14 +165,14 @@ PRODUCT_COPY_FILES += \
     device/semc/mimmi/prebuilt/lib/libwms.so:system/lib/libwms.so \
     device/semc/mimmi/prebuilt/lib/libwmsts.so:system/lib/libwmsts.so \
     device/semc/mimmi/prebuilt/framework/com.dsi.ant.antradio_library.jar:system/framework/com.dsi.ant.antradio_library.jar \
-    device/semc/mimmi/prebuilt/lib/libaudioeq.so:system/lib/libaudioeq.so \	
+    device/semc/mimmi/prebuilt/lib/libaudioeq.so:system/lib/libaudioeq.so \
     device/semc/mimmi/prebuilt/usr/keychars/mimmi_keypad.kcm.bin:system/usr/keychars/mimmi_keypad.kcm.bin \
     device/semc/mimmi/prebuilt/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
     device/semc/mimmi/prebuilt/usr/keychars/systemconnector.kcm.bin:system/usr/keychars/systemconnector.kcm.bin \
-	device/semc/mimmi/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
+    device/semc/mimmi/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     device/semc/mimmi/prebuilt/usr/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
-    device/semc/mimmi/prebuilt/usr/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \   
+    device/semc/mimmi/prebuilt/usr/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/semc/mimmi/prebuilt/usr/keylayout/systemconnector.kl:system/usr/keylayout/systemconnector.kl \
     device/semc/mimmi/prebuilt/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-	device/semc/mimmi/prebuilt/usr/keylayout/mimmi_keypad.kl:system/usr/keylayout/mimmi_keypad.kl \
+    device/semc/mimmi/prebuilt/usr/keylayout/mimmi_keypad.kl:system/usr/keylayout/mimmi_keypad.kl \
 	
