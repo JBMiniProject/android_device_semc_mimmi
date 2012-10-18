@@ -233,6 +233,8 @@
 
     <!-- enable screen saver feature -->
     <bool name="config_enableDreams">true</bool>
+    <!-- Name of screensaver components to look for if none has been chosen by the user -->
+    <string name="config_defaultDreamComponent" translatable="false">com.android.deskclock/com.android.deskclock.Screensaver</string>
 
     <bool name="config_sf_limitedAlpha">true</bool>
     <bool name="config_sf_slowBlur">false</bool>
