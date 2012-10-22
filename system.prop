@@ -57,7 +57,7 @@ windowsmgr.max_events_per_sec=150
 # LCD
 ro.opengles.version=131072
 settings.display.autobacklight=1
-hwui.render_dirty_regions=false
+debug.hwui.render_dirty_regions=false
 hwui.print_config=choice
 
 # USB
