@@ -19,10 +19,10 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 # Inherit from the common version
 -include device/semc/msm7x27-common/msm7x27.mk
 
-DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS := device/semc/mimmi/overlay
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := mimmi
+PRODUCT_NAME := jbmp_mimmi
 PRODUCT_DEVICE := mimmi
 PRODUCT_MODEL := U20i
 
@@ -74,7 +74,8 @@ PRODUCT_LOCALES += \
 
 # Torch
 PRODUCT_PACKAGES += \
-    Torch		
+    Torch \
+    MimmiParts		
 		
 # Touchsceen
 PRODUCT_COPY_FILES += \
@@ -171,7 +172,5 @@ PRODUCT_COPY_FILES += \
     device/semc/mimmi/prebuilt/usr/keychars/systemconnector.kcm.bin:system/usr/keychars/systemconnector.kcm.bin \
     device/semc/mimmi/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     device/semc/mimmi/prebuilt/usr/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
-    device/semc/mimmi/prebuilt/usr/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/semc/mimmi/prebuilt/usr/keylayout/systemconnector.kl:system/usr/keylayout/systemconnector.kl \
-    device/semc/mimmi/prebuilt/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-    device/semc/mimmi/prebuilt/usr/keylayout/mimmi_keypad.kl:system/usr/keylayout/mimmi_keypad.kl \
+    device/semc/mimmi/prebuilt/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl
