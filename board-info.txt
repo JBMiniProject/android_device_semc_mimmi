@@ -1,4 +1,0 @@
-require board=delta
-require version-bootloader=unlocked
-require version-baseband=M76XX-TSNCJOLYM-53404015
-
