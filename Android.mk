@@ -1,5 +1,10 @@
-LOCAL_PATH := $(call my-dir)
+# inherit from the common version
+-include device/semc/msm7x27-common/Android.mk
+
+LOCAL_PATH := $(my-dir)
+
+LOCAL_MODULE_TAGS := optional
 
 ifeq ($(TARGET_DEVICE),mimmi)
-    include $(call all-makefiles-under,$(LOCAL_PATH))
+    include $(all-subdir-makefiles)
 endif

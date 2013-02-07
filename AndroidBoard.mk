@@ -19,3 +19,8 @@
 #
 
 LOCAL_PATH := device/semc/mimmi/
+
+# Least specific includes go first, so that they can get
+# overridden further down
+include $(CLEAR_VARS)
+
