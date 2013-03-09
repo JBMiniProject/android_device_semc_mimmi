@@ -21,6 +21,7 @@ TARGET_NO_LIVEWALLPAPERS := false
 TARGET_BOOTANIMATION_NAME := vertical-240x320
 TARGET_INCLUDE_GAPPS := true
 TARGET_USES_SRS := true
+SEMC_KEYBOARD := true
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=U20 BUILD_FINGERPRINT="google/soju/crespo:4.1.2/JZO54K/485486:user/release-keys" PRIVATE_BUILD_DESC="soju-user 4.1.2 JZO54K 485486 release-keys"
