@@ -61,7 +61,7 @@ debug.hwui.render_dirty_regions=false
 hwui.print_config=choice
 
 # USB
-persist.sys.usb.config=mass_storage,adb
+persist.sys.usb.config=mtp,adb
 
 # Dalvik tweaks
 dalvik.vm.dexopt-flags=m=y
