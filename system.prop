@@ -6,20 +6,26 @@ rild.libpath=/system/lib/libsemc_ril.so
 rild.libargs=-d/dev/smd0
 ro.telephony.ril.v3=icccardstatus,signalstrength,datacall
 ro.telephony.default_network=0
+ro.telephony.call_ring.delay=1000
 ro.telephony.call_ring.multiple=false
 ro.ril.disable.power.collapse=1
 ro.ril.enable.a52=1
 ro.ril.enable.a53=1
 ro.ril.hsxpa=2
-ro.ril.hsupa.category=5
 ro.ril.gprsclass=10
+ro.telephony.ril_skip_locked=true
+ro.ril.hep=1
+ro.ril.hsdpa.category=10
+ro.ril.hsupa.category=6
+ro.ril.enable.dtm=1
+ro.ril.enable.3g.prefix=1
+persist.ro.ril.sms_sync_sending=1
 
-# Wlan
-wifi.interface=tiwlan0
-wifi.supplicant_scan_interval=45
-wifi.hotspot.ti=1
-wifi.ap.interface=tiap0
-
+# Wi-Fi
+wifi.interface=wlan0
+wifi.softap.interface=wlan0
+wifi.softapconcurrent.interface=wlan0
+wifi.supplicant_scan_interval=180
 
 # Media
 ro.media.dec.jpeg.memcap=10000000
@@ -39,50 +45,63 @@ media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
+media.stagefright.enable-record=true
+
+# Camera
+persist.pmem.camera=4000000
+debug.camcorder.disablemeta=1
 
 # Performance
 debug.composition.type=mdp
 debug.performance.tuning=1
 debug.sf.hw=1
 debug.gr.numframebuffers=3
-debug.gr.swapinterval=0
+persist.service.zram=1
 ro.compcache.default=18
 video.accelerate.hw=1
-persist.service.zram=1
 persist.sys.use_16bpp_alpha=1
 persist.sys.use_dithering=1
+hwui.disable_vsync=true
+debug.sf.no_hw_vsync=1
+hwui.print_config=choice
+debug.hwui.render_dirty_regions=false
+debug.enabletr=false
 com.qc.hardware=true
 windowsmgr.max_events_per_sec=150
+pm.sleep_mode=2
+persist.sys.force_hw_ui=true
+ro.max.fling_velocity=4000
+debug.qctwa.statusbar=1
+debug.qctwa.preservebuf=1
+debug.mdpcomp.logs=0
+sys.mem.max_hidden_apps=3
 
 # LCD
 ro.opengles.version=131072
 settings.display.autobacklight=1
-debug.hwui.render_dirty_regions=false
-hwui.print_config=choice
 
 # USB
 persist.sys.usb.config=mtp,adb
+persist.service.adb.enable=1
+persist.android.strictmode=0
 
-# Dalvik tweaks
+# Dalvik
 dalvik.vm.dexopt-flags=m=y
-dalvik.vm.checkjni=false
-dalvik.vm.heapsize=48m
+dalvik.vm.checkjni=0
+ro.kernel.android.checkjni=0
+dalvik.vm.verify_bytecode=false
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapsize=32m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=2m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
-dalvik.vm.stack-trace-file=/data/anr/traces.txt
-dalvik.vm.lockprof.threshold=500
+dalvik.gc.type-precise
 
 # GPS
 ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
-
-# Some stuff
-pm.sleep_mode=2
-debug.enabletr=false
-
-# Camera
-debug.camcorder.disablemeta=1
-persist.pmem.camera=4000000
 
 # Theme
 persist.sys.themeId=JB Mini Theme
