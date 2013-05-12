@@ -109,7 +109,7 @@ persist.sys.themePackageName=com.oxt.theme.jbmini
 
 # OTA Update Center
 otaupdater.otaid=jbmpx10mp
-otaupdater.otaver=release2
-otaupdater.otatime=20130209-1200
+otaupdater.otaver=release4
+otaupdater.otatime=20130512-1200
 otaupdater.noflash=1
 otaudpater.rebootcmd=$$NULL$$
